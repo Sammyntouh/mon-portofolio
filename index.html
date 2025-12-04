@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — ATANGANA NTOUH Sammy Junior</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">Sammy.</div>
+
+      <nav class="nav" id="nav-menu">
+        <a href="#hero">Accueil</a>
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Salut, je suis <span class="accent">ATANGANA NTOUH<br>Sammy Junior</span></h1>
+        <p class="lead">
+          Étudiant en Intelligence Artificielle & Big Data.<br>
+          Je développe des solutions data-driven et des applications web & mobiles.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#projects">Voir mes projets</a>
+          <a class="btn-outline" href="CV.pdf" download>Télécharger CV</a>
+        </div>
+      </div>
+
+      <div class="hero-img">
+        <img src="profile.jpg" alt="Photo de profil">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="container section about-section">
+    <h2>À propos</h2>
+    <p>
+      Étudiant à Keyce informatique et IA, passionné par la data science, l'IA, 
+      le développement web/mobile et la résolution de problèmes. 
+      Je crée des projets alignés avec les principes éthiques et les bonnes pratiques technologiques.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="container section skills-section">
+    <h2>Compétences</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon icon-code"></div>
+        <h4>Développement</h4>
+        <ul>
+          <li>HTML / CSS / JavaScript</li>
+          <li>Python (intermédiaire)</li>
+          <li>Java (POO, Streams, Lambdas)</li>
+          <li>Node.js – APIs REST</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon icon-layers"></div>
+        <h4>Frameworks & Mobile</h4>
+        <ul>
+          <li>React.js & React Native (sans Expo)</li>
+          <li>TailwindCSS / UI Modernes</li>
+          <li>Navigation mobile & responsive</li>
+          <li>Optimisation UI/UX</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon icon-tools"></div>
+        <h4>Outils & Méthodes</h4>
+        <ul>
+          <li>Git & GitHub</li>
+          <li>Méthodes Agiles (Scrum)</li>
+          <li>Docker (bases)</li>
+          <li>Analyse de données / IA & Big Data</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="container section projects-section">
+    <h2>Projets</h2>
+    <div class="projects-grid">
+      <article class="project-card">
+        <img src="placeholder.png" class="project-img">
+        <div class="project-body">
+          <h3>Site communautaire LTA</h3>
+          <p>Site pour rassembler une communauté camerounaise autour de divers thèmes.</p>
+          <div class="project-links">
+            <a href="#">Démo</a>
+            <a href="#">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <video src="vid_lta.MP4" class="project-img" controls></video>
+        <div class="project-body">
+          <h3>FreelancePlus</h3>
+          <p>Application pour mettre en avant les freelances et leurs services.</p>
+          <div class="project-links">
+            <a href="#">Démo</a>
+            <a href="#">Code</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="container section contact-section">
+    <h2>Contact</h2>
+    <p>Tu peux me contacter par e-mail ou via LinkedIn.</p>
+
+    <form class="contact-form" action="mailto:ton.sammyjuniorntouh@gmail.com" method="get">
+      <div class="form-group">
+        <label>Nom</label>
+        <input type="text" name="name" placeholder="Ton nom" required>
+      </div>
+
+      <div class="form-group">
+        <label>Message</label>
+        <textarea name="message" placeholder="Ton message..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
+
+    <p class="muted">Ou</p>
+    <a class="linkedin" href="#" target="_blank">Mon LinkedIn</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© <span id="year"></span> Sammy Ntouh — Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

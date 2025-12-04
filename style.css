@@ -1,0 +1,76 @@
+:root{
+  --bg: #0f1724;
+  --card: #0b1220;
+  --text: #e6eef8;
+  --muted: #9fb0c8;
+  --accent: #4fd1c5;
+  --max-width: 1000px;
+  font-family: Inter, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:linear-gradient(180deg,#071022,#0b1220);color:var(--text);-webkit-font-smoothing:antialiased}
+.container{width:90%;max-width:var(--max-width);margin:0 auto;padding:3rem 0}
+
+/* HEADER */
+.header{position:fixed;top:0;width:100%;background:rgba(15,23,36,0.85);backdrop-filter:blur(10px);z-index:1000}
+.nav-container{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+.logo{font-weight:700;font-size:1.3rem;color:var(--accent)}
+.nav a{color:var(--muted);margin-left:1rem;text-decoration:none;transition:0.2s}
+.nav a:hover{color:var(--accent)}
+.hamburger{display:none;flex-direction:column;cursor:pointer}
+.hamburger span{height:3px;width:25px;background:var(--accent);margin-bottom:5px;border-radius:2px}
+
+/* HERO */
+.hero{padding:6rem 0 4rem 0;display:flex;align-items:center;justify-content:center}
+.hero-inner{display:flex;gap:2rem;flex-wrap:wrap;align-items:center}
+.hero-text{max-width:600px}
+.hero-text h1{font-size:2rem;line-height:1.2;margin:0}
+.hero-text .accent{color:var(--accent)}
+.hero-text .lead{color:var(--muted);margin-top:1rem}
+.hero-actions{margin-top:1.5rem}
+.btn{display:inline-block;padding:0.6rem 1rem;border-radius:8px;background:var(--accent);color:#042022;text-decoration:none;font-weight:600;margin-right:0.7rem;transition:0.2s}
+.btn:hover{opacity:0.85}
+.btn-outline{background:transparent;border:1px solid rgba(255,255,255,0.08);color:var(--text)}
+.hero-img img{width:220px;height:220px;border-radius:50%;border:4px solid var(--accent);object-fit:cover}
+
+/* SECTION */
+.section{padding:3rem 0;border-top:1px solid rgba(255,255,255,0.02)}
+h2{font-size:1.5rem;margin-bottom:1rem}
+p{line-height:1.6;color:var(--muted)}
+
+/* SKILLS */
+.skills-grid{display:grid;gap:25px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.skill-card{background: linear-gradient(145deg, #0b1220, #0f1724);border-radius:14px;padding:28px 22px;text-align:left;color:var(--text);border:1px solid rgba(255,255,255,0.05);box-shadow:0 6px 14px rgba(0,0,0,0.3);transition:0.25s ease;position:relative;overflow:hidden}
+.skill-card:hover{transform:translateY(-6px);border-color:var(--accent);box-shadow:0 14px 28px rgba(79,209,197,0.25)}
+.skill-card h4{font-size:1.25rem;margin:10px 0;color:#fff}
+.skill-card ul{padding-left:18px;margin:0}
+.skill-card li{margin-bottom:8px;font-size:0.95rem;color:#cbd5e1}
+.skill-icon{width:42px;height:42px;margin-bottom:12px;background-size:contain;background-repeat:no-repeat;filter:brightness(1.4)}
+.icon-code{background-image:url('https://cdn-icons-png.flaticon.com/512/942/942748.png')}
+.icon-layers{background-image:url('https://cdn-icons-png.flaticon.com/512/1828/1828925.png')}
+.icon-tools{background-image:url('https://cdn-icons-png.flaticon.com/512/471/471662.png')}
+
+/* PROJECTS */
+.projects-grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.project-card{background:rgba(255,255,255,0.02);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;transition:0.3s}
+.project-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(79,209,197,0.2)}
+.project-img{width:100%;height:140px;object-fit:cover;background:#071022}
+.project-body{padding:0.8rem}
+.project-links a{margin-right:0.6rem;color:var(--accent);text-decoration:none}
+
+/* CONTACT */
+.contact-form{display:flex;flex-direction:column;gap:0.6rem;max-width:480px}
+.contact-form input,.contact-form textarea{padding:0.6rem;border-radius:6px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--text)}
+.contact-form label{display:block;font-size:0.9rem;color:var(--muted)}
+.linkedin{color:var(--accent);text-decoration:none}
+
+/* FOOTER */
+.footer{padding:1rem 0;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.03);margin-top:2rem}
+
+/* MEDIA */
+@media (max-width:768px){.
+  hero-inner{flex-direction:column;align-items:center;text-align:center}.hero-text .lead{max-width:100%}.hero-img img{width:180px;height:180px}}
+
+/* ANIMATIONS */
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
